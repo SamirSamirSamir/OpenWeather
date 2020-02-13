@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/black"
+    android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/ll_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/card_content_padding"
+                android:paddingLeft="@dimen/card_content_padding"
+                android:paddingRight="@dimen/card_content_padding"
+
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/tv_date_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:textColor="@color/colorTitle"
+                    android:text="Date"
+                    android:paddingLeft="@dimen/card_content_padding"
+                    android:paddingTop="@dimen/card_content_padding"
+                    android:paddingRight="@dimen/card_content_padding"
+                    android:textSize="@dimen/weather_title_size"
+                    />
+
+
+                <TextView
+                    android:id="@+id/tv_date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/card_content_padding"
+                    android:paddingTop="@dimen/card_content_padding"
+                    android:paddingRight="@dimen/card_content_padding"
+                    android:textColor="@color/colorTitle"
+                    android:textSize="@dimen/weather_title_size"
+                    android:typeface="sans" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_temp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/ll_date"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/tv_tempName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/card_content_padding"
+                    android:paddingTop="@dimen/card_content_padding"
+                    android:paddingRight="@dimen/card_content_padding"
+                    android:text="Temperature:"
+                    android:textColor="@color/colorTitle"
+                    android:textSize="@dimen/weather_title_size"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:id="@+id/tv_temp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:layout_gravity="right"
+                    android:paddingLeft="@dimen/card_content_padding"
+                    android:paddingRight="@dimen/card_content_padding"
+                    android:paddingTop="@dimen/card_content_padding"
+                    android:textColor="@android:color/holo_red_light"
+                    android:textSize="@dimen/weather_title_size"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_pressure"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/card_content_padding"
+                android:paddingLeft="@dimen/card_content_padding"
+                android:paddingRight="@dimen/card_content_padding"
+                android:layout_below="@id/ll_temp"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/tv_pressure_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="Pressure"
+                    android:paddingLeft="@dimen/card_content_padding"
+                    android:paddingTop="@dimen/card_content_padding"
+                    android:paddingRight="@dimen/card_content_padding"
+                    android:textColor="@color/colorTitle"
+                    android:textSize="@dimen/weather_title_size"
+                    />
+
+
+                <TextView
+                    android:id="@+id/tv_pressure"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/card_content_padding"
+                    android:paddingTop="@dimen/card_content_padding"
+                    android:paddingRight="@dimen/card_content_padding"
+                    android:textColor="@color/colorTitle"
+                    android:textSize="@dimen/weather_title_size"
+                    android:typeface="sans" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_humidity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/card_content_padding"
+                android:paddingLeft="@dimen/card_content_padding"
+                android:paddingRight="@dimen/card_content_padding"
+                android:layout_below="@id/ll_pressure"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/tv_humidity_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.5"
+                    android:text="Humidity"
+                    android:paddingLeft="@dimen/card_content_padding"
+                    android:paddingTop="@dimen/card_content_padding"
+                    android:paddingRight="@dimen/card_content_padding"
+                    android:textSize="@dimen/weather_title_size"
+                    android:textColor="@color/colorTitle"
+                    />
+
+
+                <TextView
+                    android:id="@+id/tv_humidity"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/card_content_padding"
+                    android:paddingTop="@dimen/card_content_padding"
+                    android:paddingRight="@dimen/card_content_padding"
+                    android:textColor="@color/colorTitle"
+                    android:textSize="@dimen/weather_title_size"
+                    android:typeface="sans"/>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+</LinearLayout>
