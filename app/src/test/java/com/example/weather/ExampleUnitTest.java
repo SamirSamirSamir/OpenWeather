@@ -1,6 +1,8 @@
 package com.example.weather;
 
 
+import org.junit.Test;
+
 import static junit.framework.Assert.assertEquals;
 
 /**
